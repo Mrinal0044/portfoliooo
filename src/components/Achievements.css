@@ -1,0 +1,65 @@
+.achievements-grid {
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: var(--space-3);
+}
+
+.achievement-card {
+  padding: var(--space-4);
+  border: 1px solid var(--border-color);
+  align-items: flex-start;
+}
+
+.achievement-icon-wrapper {
+  color: var(--accent);
+  background: rgba(34, 211, 238, 0.08);
+  padding: 0.65rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.achievement-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.extra-curricular-card {
+  padding: var(--space-5);
+  border: 1px solid var(--border-color);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.extra-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-2);
+}
+
+.extra-description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.extra-description strong {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
